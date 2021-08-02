@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grow The Home Gardening</title>
+    <link rel="stylesheet" href="style.css"/>     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7908fb9ab4.js" crossorigin="anonymous"></script> 
+  </head>
+  
+    <body>
+    <section class="about-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png"/a>
+          <div class="nav-menu" id="navlinks">
+                     
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="about.html">About Us</a></li>
+            </ul>
+          
+          </div>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>     
+    </section>
+
+    <section>
+      <div class="about">    
+        <h1>About Us</h1> 
+        <div class="row">
+          <div class="about-col">
+            <article>Our project is about gardening, It will be a blogging site that can help
+            people to start gardening at home by giving lots of information and
+            resources. We all know about the deforestation issue of our country and
+            it's increasing day by day. If we see the population of our country and its
+            needs, it's quite impossible to stop. so we have to think of an alternative
+            to meet up our oxygen demand and balance the environmental needs.
+            Gardening can be the best alternative, Our website can be an inspiration
+            for them and its impact will great for our eco-systemWe all know about the deforestation 
+            issue of our country and it's increasing day by day. If we see the population of our country 
+            and its needs, it's quite impossible to stop. so we have to think of an alternative to meet 
+            up our oxygen demand and balance the environmental needs.
+            </article>
+          </div>
+          <div class="about-col">
+            <img src="images/about.jpg" alt="">
+          </div>
+        </div> 
+      </div>
+    </section>
+
+<!----------------------js---------------------->
+
+  <script>
+    var navmenu = document.getElementById("navlinks");
+    function openMenu(){
+      navmenu.style.right = "0";
+    }
+    function hideMenu(){
+      navmenu.style.right = "-200px";
+    }
+  </script> 
+
+<!----------------------FOOTER---------------------->
+
+<footer>
+    <div class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+           <div class="nav-footer">                     
+            <ul><a class="active" href="index.html">Home</a></ul>
+            <ul><a href="blog.html">Blog</a>  </ul>           
+            <ul><a href="contact.html">Contact</a></ul>
+            <ul><a  class="active"href="about.html">About Us</a> </ul>                 
+          </div> 
+        </div>
+        
+        <div class="footer-col">
+          <div class="footericons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest"></i>    
+          </div> 
+        </div>
+       
+        <div class="footer-col">
+          <div class="contact us">
+            <h2>Contact Us</h2>
+            <h3>info@gthomegarden.com</h3>
+            <h3>+880191000000</h3>   
+          </div>
+        </div>
+    </div>  
+    </div>  
+</footer>
+            
+</body>  
+</html>
