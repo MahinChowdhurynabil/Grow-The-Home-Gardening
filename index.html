@@ -10,40 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7908fb9ab4.js" crossorigin="anonymous"></script> 
   </head>
-  
   <body>
+    <nav>
+      <a href="index.html"><img src="images/logo.png">
+        <div class="nav-menu" id="navlinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>              
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="seach-box">
+               <div> <input class="search-text" type="search" placeholder="Search">
+                <i class="fa fa-search"></i></div>
+              </li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+    </nav>
     <section class="header">
-      <nav>
-        <a href="index.html"><img src="images/logo.png"/a>
-          <div class="nav-menu" id="navlinks">
-                     
-            <i class="fas fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>              
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-          
-          </div>
-          <i class="fas fa-bars" onclick="openMenu()"></i>
-      </nav>
-
     <div class="text">
       <h1>Gardening adds years to your life</h1>
       <p>There's no better way to perpetuate the eating local, sustainable foods trend than by growing your own<br> fruits, vegetables,
         herbs and beans—either in your own yard or at a community garden. Just like cooking from scratch at home,
       </p>
-      <a href="" class="button">Learn More</a>
-
+      <a href="blog.html" class="h-button">Learn More</a>
     </div>  
     </section>
-  
-  
-  
-  
 <!----------------------JS---------------------->
-
   <script>
     var navmenu = document.getElementById("navlinks");
     function openMenu(){
@@ -53,18 +47,9 @@
       navmenu.style.right = "-200px";
     }
   </script>  
-
-
- 
-
-  
-
-
 <!----------------------BLOGPOST---------------------->
 <section class="blogpost">
-
       <h1>Recent Post</h1>
-      
       <div class="row">
         <div class="blogpost-col">
           <img src="images/pes.jpg" alt="Pest Control">
@@ -74,7 +59,6 @@
              They damage and destroy once healthy plants within a short period, 
              ruining all of your hard work</p>
         </div>
- 
         <div class="blogpost-col">
           <img src="images/lacebugs-tube.jpg" alt="lacebugs-tube">
           <h1>How to Fight Lace Bugs</h1>
@@ -82,7 +66,6 @@
           <p>By Erin Marissa Russell and Matt Gibson Lace bugs are frequent visitors to the modern garden,
               and you’ll find them feeding on all kinds of trees, shrubs, and herb plants.</p>
         </div>
- 
         <div class="blogpost-col">
           <img src="images/dog.jpg" alt="Gardening">
           <h1>6 Great Tips For A Dog-Friendly Garden</h1>
@@ -92,13 +75,19 @@
             </p>
         </div>
       </div>
-
 </section>
-
-
-
+  <section class="home-more">
+    <div class="row">
+      <div class="home-left">
+        <img src="images/plant more.jpg" alt="plant more">
+      </div>
+      <div class="home-right"> 
+        <p>We need to plant more <br> to safe the enviroment.</p>
+        <h1>Lets start Today</h1>
+      </div>
+    </div>
+  </section>
  <!----------------------FOOTER---------------------->
-
  <footer>
   <div class="footer">
   <div class="footer-row">
@@ -110,8 +99,11 @@
           <ul><a href="about.html">About Us</a> </ul>                 
         </div> 
       </div>
-      
       <div class="footer-col">
+        <div class="contact us">
+          <h2>Contact Us</h2>
+          <h3>info@gthomegarden.com</h3>
+        </div>
         <div class="footericons">
           <i class="fa fa-facebook"></i>
           <i class="fa fa-twitter" ></i>
@@ -119,22 +111,17 @@
           <i class="fa fa-pinterest"></i>    
         </div> 
       </div>
-     
       <div class="footer-col">
-        <div class="contact us">
-          <h2>Contact Us</h2>
-          <h3>info@gthomegarden.com</h3>
-          <h3>+880191000000</h3>   
+        <div class="pp">
+         <ul><a href="">Privacy Policy</a></ul> 
+          <ul><a href="">Disclaimer</a></ul>
         </div>
       </div>
-
   </div>  
   </div>  
-
   <div class="footer-sub">
     <p>Design By  <a href="www.favebook.com/mahinchowdhurynabil">Mahin</a> and <a href="">Sumitra</a></p>
   </div>
 </footer>
-  
 </body>
 </html>

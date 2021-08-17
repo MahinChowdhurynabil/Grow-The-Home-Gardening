@@ -10,26 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7908fb9ab4.js" crossorigin="anonymous"></script> 
   </head>
-  
     <body>
     <section class="about-header">
       <nav>
-        <a href="index.html"><img src="images/logo.png"/a>
+        <a href="index.html"><img src="images/logo.png">
           <div class="nav-menu" id="navlinks">
-                     
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>              
                 <li><a href="contact.html">Contact</a></li>
                 <li><a class="active" href="about.html">About Us</a></li>
+                <li class="seach-box">
+                  <input class="search-text" type="search" placeholder="Search">
+                  <i class="fa fa-search"></i>
+                </li>
             </ul>
-          
           </div>
           <i class="fas fa-bars" onclick="openMenu()"></i>
       </nav>     
     </section>
-
     <section>
       <div class="about">    
         <h1>About Us</h1> 
@@ -54,9 +54,7 @@
         </div> 
       </div>
     </section>
-
 <!----------------------js---------------------->
-
   <script>
     var navmenu = document.getElementById("navlinks");
     function openMenu(){
@@ -66,41 +64,41 @@
       navmenu.style.right = "-200px";
     }
   </script> 
-
 <!----------------------FOOTER---------------------->
-
 <footer>
-    <div class="footer">
-    <div class="footer-row">
-        <div class="footer-col">
-           <div class="nav-footer">                     
-            <ul><a class="active" href="index.html">Home</a></ul>
-            <ul><a href="blog.html">Blog</a>  </ul>           
-            <ul><a href="contact.html">Contact</a></ul>
-            <ul><a  class="active"href="about.html">About Us</a> </ul>                 
-          </div> 
+  <div class="footer">
+  <div class="footer-row">
+      <div class="footer-col">
+         <div class="nav-footer">                     
+          <ul><a class="active" href="index.html">Home</a></ul>
+          <ul><a href="blog.html">Blog</a>  </ul>           
+          <ul><a href="contact.html">Contact</a></ul>
+          <ul><a href="about.html">About Us</a> </ul>                 
+        </div> 
+      </div>
+      <div class="footer-col">
+        <div class="contact us">
+          <h2>Contact Us</h2>
+          <h3>info@gthomegarden.com</h3>
         </div>
-        
-        <div class="footer-col">
-          <div class="footericons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-pinterest"></i>    
-          </div> 
+        <div class="footericons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter" ></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-pinterest"></i>    
+        </div> 
+      </div>
+      <div class="footer-col">
+        <div class="pp">
+         <ul><a href="">Privacy Policy</a></ul> 
+          <ul><a href="">Disclaimer</a></ul>
         </div>
-       
-        <div class="footer-col">
-          <div class="contact us">
-            <h2>Contact Us</h2>
-            <h3>info@gthomegarden.com</h3>
-            <h3>+880191000000</h3>   
-          </div>
-        </div>
-    </div>  
-    </div>  
-</footer>      
-
-
+      </div>
+  </div>  
+  </div>  
+  <div class="footer-sub">
+    <p>Design By  <a href="www.favebook.com/mahinchowdhurynabil">Mahin</a> and <a href="">Sumitra</a></p>
+  </div>
+</footer>   
 </body>  
 </html>

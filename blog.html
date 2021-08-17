@@ -10,28 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7908fb9ab4.js" crossorigin="anonymous"></script> 
   </head>
-  
   <body>
     <section class="blog-header">
       <nav>
-        <a href="index.html"><img src="images/logo.png"/a>
+        <a href="index.html"><img src="images/logo.png">
           <div class="nav-menu" id="navlinks">
-                     
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active"href="blog.html">Blog</a></li>              
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li class="seach-box">
+                  <input class="search-text" type="search" placeholder="Search">
+                  <i class="fa fa-search"></i>
+                </li>
             </ul>
-          
           </div>
           <i class="fas fa-bars" onclick="openMenu()"></i>
       </nav>
-      
     </section>
 <!----------------------js---------------------->
-
   <script>
     var navmenu = document.getElementById("navlinks");
     function openMenu(){
@@ -41,21 +40,19 @@
       navmenu.style.right = "-200px";
     }
   </script>
-
 <!----------------------blogpost---------------------->
 <section class="blogpost">
   <h1>Blog Post</h1>
-
       <div class="row">
          <div class="blogpost-col">
-           <img src="images/indoor garden.jpg" alt="Gardening">
-           <h1>Indoor Gardening Idea</h1>
+           <a href="post.html" ><img src="images/indoor garden.jpg" alt="Gardening">
+           <h1>Best indoor gardening idea for small place</h1>
            <h4>2 june 2021</h4>
            <p>Vegetable gardens, patio planters, and flower beds undoubtedly add appeal to any home and make for some really fun hobbies. 
              But sometimes you just don’t have the space,
              or you might prefer to spend your time inside where the elements (and bugs!) can’t really get to you. </p>
+            </a>
           </div>
-
          <div class="blogpost-col">
           <img src="images/eq.jpg" alt="Gardening">
           <h1>How to plant proper way</h1>
@@ -64,7 +61,6 @@
              Whether we’re in a hurry or simply lack the effort,
             all too often we quickly dig a hole</p>
         </div>
-
         <div class="blogpost-col">
           <img src="images/huy-phan.jpg" alt="Gardening">
           <h1>Best equipments for gardening</h1>
@@ -73,12 +69,8 @@
             But before you pull on your gardening gloves, think about your needs. 
            The best gardening tools focus on what you'll actually be doing.</p>
         </div>
-
-
-
       </div>
       <div class="row">
-
        <div class="blogpost-col">
          <img src="images/pes.jpg" alt="Pest Control">
          <h1>11 Organic Pest Control Methods to Protect Your Garden</h1>
@@ -87,7 +79,6 @@
             They damage and destroy once healthy plants within a short period, 
             ruining all of your hard work</p>
        </div>
-
        <div class="blogpost-col">
          <img src="images/lacebugs-tube.jpg" alt="lacebugs-tube">
          <h1>How to Fight Lace Bugs</h1>
@@ -95,7 +86,6 @@
          <p>By Erin Marissa Russell and Matt Gibson Lace bugs are frequent visitors to the modern garden,
              and you’ll find them feeding on all kinds of trees, shrubs, and herb plants.</p>
        </div>
-
        <div class="blogpost-col">
          <img src="images/dog.jpg" alt="Gardening">
          <h1>6 Great Tips For A Dog-Friendly Garden</h1>
@@ -104,13 +94,9 @@
            But if not properly set up, they can also pose a number of dangers you don’t want your pooch exposed to.
            </p>
       </div>
-
-
       </div>
 </section> 
-
 <!----------------------js---------------------->
-
  <script>
     var navmenu = document.getElementById("navlinks");
     function openMenu(){
@@ -120,7 +106,6 @@
       navmenu.style.right = "-200px";
     }
   </script>   
-
  <!----------------------FOOTER---------------------->
  <footer>
   <div class="footer">
@@ -133,26 +118,29 @@
           <ul><a href="about.html">About Us</a> </ul>                 
         </div> 
       </div>
-      
-      <div class="footer-col">
-        <div class="footericons">
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-pinterest"></i>    
-        </div> 
-      </div>
-     
       <div class="footer-col">
         <div class="contact us">
           <h2>Contact Us</h2>
           <h3>info@gthomegarden.com</h3>
-          <h3>+880191000000</h3>   
+        </div>
+        <div class="footericons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter" ></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-pinterest"></i>    
+        </div> 
+      </div>
+      <div class="footer-col">
+        <div class="pp">
+         <ul><a href="">Privacy Policy</a></ul> 
+          <ul><a href="">Disclaimer</a></ul>
         </div>
       </div>
   </div>  
   </div>  
+  <div class="footer-sub">
+    <p>Design By  <a href="www.favebook.com/mahinchowdhurynabil">Mahin</a> and <a href="">Sumitra</a></p>
+  </div>
 </footer>
- 
 </body>
 </html>
